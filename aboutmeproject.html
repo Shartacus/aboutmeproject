@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me</title>
+</head>
+<body>
+    <h1>Welcome to My Page</h1>
+    <h2>About Myself</h2>
+    <div id="about"></div> <!-- JavaScript will insert text here -->
+
+    <script>
+        // Wait for the page to load before running the script
+        document.addEventListener("DOMContentLoaded", function () {
+            // Find the "about" section by its ID
+            const aboutSection = document.getElementById("about");
+
+            // Insert the about-me text into the section
+            aboutSection.textContent = "My Name is Thor Pearson. I enjoy 3D printing, reading, and music. My graduation year is 2025. I have 1 child, a cat, and a dog.";
+        });
+    </script>
+</body>
+</html>
